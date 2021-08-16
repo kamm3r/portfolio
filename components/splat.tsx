@@ -1,55 +1,30 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { MeshDistortMaterial, RoundedBox, Sphere } from '@react-three/drei';
-
-// const Model = () => {
-//   const gltf = useGLTF('model.glb', true);
-//   return <primitive object={gltf.scene} dispose={null} />;
-// };
+import { RoundedBox } from '@react-three/drei';
 
 export default function Element(props: any) {
   const mesh = useRef<any>();
-  useFrame(
-    () => (
-      (mesh.current.rotation.x += 0.025), (mesh.current.rotation.y += 0.025)
-    )
-  );
+
+  useFrame((state) => {
+    const et = state.clock.elapsedTime;
+    mesh.current.position.y = Math.sin((et + 1 * 2000) / 2) * 10;
+    mesh.current.rotation.x = Math.sin((et + 2 * 2000) / 3) / 10;
+    mesh.current.rotation.y = Math.cos((et + 3 * 2000) / 2) / 10;
+    mesh.current.rotation.z = Math.sin((et + 4 * 2000) / 3) / 10;
+  });
 
   return (
-    <group>
-      {/* <Model /> */}
-      {/* <RoundedBox
+    <group {...props}>
+      <RoundedBox
         {...props}
         ref={mesh}
         args={[1, 1, 1]}
         radius={0.1}
         smoothness={4}
         scale={[20, 20, 20]}
-      > */}
-      {/* <meshPhongMaterial attach='material' color='#762b2b' /> */}
-      {/* <sphereGeometry attach='geometry' args={[1, 16, 200]} />
-        <meshPhongMaterial attach='material' color='#5A6BFF' />
-      </RoundedBox> */}
-      {/* <Canvas> */}
-      <Sphere
-        {...props}
-        ref={mesh}
-        visible
-        // position={[30, 5, 0]}
-        args={[1, 16, 200]}
-        scale={[15, 15, 15]}
       >
-        <MeshDistortMaterial
-          {...props}
-          ref={mesh}
-          color='#00A38D'
-          attach='material'
-          distort={0.5} // Strength, 0 disables the effect (default=1)
-          speed={2} // Speed (default=1)
-          roughness={0}
-        />
-      </Sphere>
-      {/* </Canvas> */}
+        <meshPhongMaterial attach='material' color='#5fffaf' />
+      </RoundedBox>
     </group>
   );
 }

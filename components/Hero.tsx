@@ -18,31 +18,34 @@ export default function Hero() {
   return (
     <section
       id='hero'
-      className='min-h-screen flex items-center justify-center px-32'
+      className='relative min-h-screen flex items-center justify-center overflow-x-hidden'
     >
-      <section className='flex gap-32 items-center justify-center px-24'>
-        <div className='flex-1'>
-          <h1 className='text-7xl font-bold mb-9'>
-            Motivated to build and design amazing experiences
-          </h1>
-          <p className='text-4xl text-gray mb-9'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
-            adipiscing faucibus egestas vel quam dui.
-          </p>
-          <Link href='/'>
-            <button className='bg-blue text-white py-2 px-8 rounded-lg'>
-              contact
-            </button>
-          </Link>
-        </div>
-        <figure className='h-96  block'>
-          <Canvas camera={{ position: [0, 0, 35], fov: 90 }}>
-            <Lights />
-            <Element position={[0, 0, 0]} />
-            {/* <OrbitControls enableZoom={false} /> */}
-          </Canvas>
-        </figure>
-      </section>
+      <div className='z-10 flex flex-col items-start justify-center mx-52'>
+        <h1 className='text-7xl font-bold mb-9'>
+          Motivated to build and design amazing experiences
+        </h1>
+        <p className='text-4xl text-gray mb-9'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
+          adipiscing faucibus egestas vel quam dui.
+        </p>
+        <Link href='/'>
+          <button className='bg-db text-white py-3 px-8 rounded-lg text-xl font-bold'>
+            contact
+          </button>
+        </Link>
+      </div>
+      <div className='absolute z-0 block w-screen h-screen'>
+        <Canvas camera={{ position: [0, 90, 0], fov: 90 }}>
+          <Lights />
+          <Element position={[0, 0, 0]} />
+          <Element position={[10, 5, 15]} />
+          <Element position={[-10, -10, -10]} />
+          <Element position={[-30, -20, -20]} />
+          <Element position={[-15, 5, 5]} />
+          <Element position={[-5, -50, -5]} />
+          {/* <OrbitControls enableZoom={false} /> */}
+        </Canvas>
+      </div>
     </section>
   );
 }
