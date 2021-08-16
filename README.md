@@ -9,6 +9,7 @@ Next.js with TypeScript.
 - make 3d object
 - contact section finishing
 - project layout with 2 columns and mappping it or for loop it
+- working
 
 `
 
