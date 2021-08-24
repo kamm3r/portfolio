@@ -12,6 +12,7 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
       danger: '#e3342f',
+      transparent: 'transparent',
     },
     extend: {},
   },
