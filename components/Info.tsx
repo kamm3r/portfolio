@@ -1,5 +1,5 @@
 const Info = () => (
-  <section id='mySkills' className='overflow-hidden'>
+  <section id='aboutMe' className='overflow-hidden'>
     <section>
       <figure>
         <svg

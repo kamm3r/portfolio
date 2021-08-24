@@ -4,7 +4,7 @@ export const projectData: ProjectsProps[] = [
   {
     name: 'Series CRUD',
     tools: 'NextJS, TailwindCSS, Prisma',
-    image: 'https://via.placeholder.com/500x400',
+    image: './seriescrud.png',
     links: {
       github: 'https://github.com/kammers/next-prisma',
       live: '',
@@ -13,7 +13,7 @@ export const projectData: ProjectsProps[] = [
   {
     name: 'Tuoteluettelo',
     tools: 'Angular, TailwindCSS',
-    image: './tuote2.png',
+    image: './tuote1.png',
     links: {
       github: 'https://github.com/kammers/tuoteluettelo',
       live: 'https://tuoteluettelo.web.app',
@@ -22,7 +22,7 @@ export const projectData: ProjectsProps[] = [
   {
     name: 'Pokedex',
     tools: 'NextJS, TailwindCSS',
-    image: 'https://via.placeholder.com/500x400',
+    image: './pokedex.png',
     links: {
       github: 'https://github.com/kammers/pokedex',
       live: '',
@@ -31,7 +31,7 @@ export const projectData: ProjectsProps[] = [
   {
     name: 'Concept',
     tools: 'Figma',
-    image: 'https://via.placeholder.com/500x400',
+    image: './concepts.png',
     links: {
       github:
         'https://www.figma.com/proto/Q0i7Tcf28ROQgiE902iZZk/ui-design?page-id=0%3A1&node-id=1%3A15',
@@ -41,16 +41,16 @@ export const projectData: ProjectsProps[] = [
   {
     name: 'Muuntaja',
     tools: 'Case Study',
-    image: 'https://via.placeholder.com/500x400',
+    image: './casestudy.png',
     links: {
       github: '',
       live: 'https://public.bc.fi/s1900879/muuntaja.pdf',
     },
   },
   {
-    name: 'Superhero CRUD',
+    name: 'Hero CRUD',
     tools: 'ExpressJS, EJS',
-    image: 'https://via.placeholder.com/500x400',
+    image: './herocrud.png',
     links: {
       github: 'https://github.com/kammers/superhero_crud',
       live: '',

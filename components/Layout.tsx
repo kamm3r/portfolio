@@ -35,11 +35,11 @@ export default function Layout({
               </Link>
             </section>
             <nav className='w-1/3 flex items-center justify-evenly'>
-              <Link href='#myWork'>
-                <a className='text-2xl'>My Work</a>
+              <Link href='#projects'>
+                <a className='text-2xl'>Projects</a>
               </Link>
-              <Link href='#mySkills'>
-                <a className='text-2xl'>My Skills</a>
+              <Link href='#aboutMe'>
+                <a className='text-2xl'>About me</a>
               </Link>
               <Link href='#contact'>
                 <a className='text-2xl'>Contact</a>
