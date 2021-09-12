@@ -7,13 +7,13 @@ export const projectData: ProjectsProps[] = [
     image: './seriescrud.png',
     links: {
       github: 'https://github.com/kammers/next-prisma',
-      live: '',
+      live: 'https://mk-next-prisma.vercel.app/',
     },
   },
   {
     name: 'Tuoteluettelo',
     tools: 'Angular, TailwindCSS',
-    image: './tuote1.png',
+    image: './tuote.png',
     links: {
       github: 'https://github.com/kammers/tuoteluettelo',
       live: 'https://tuoteluettelo.web.app',
@@ -25,7 +25,7 @@ export const projectData: ProjectsProps[] = [
     image: './pokedex.png',
     links: {
       github: 'https://github.com/kammers/pokedex',
-      live: '',
+      live: 'https://mk-pokedex.vercel.app/',
     },
   },
   {
@@ -43,8 +43,8 @@ export const projectData: ProjectsProps[] = [
     tools: 'Case Study',
     image: './casestudy.png',
     links: {
-      github: '',
-      live: 'https://public.bc.fi/s1900879/muuntaja.pdf',
+      github: 'https://public.bc.fi/s1900879/muuntaja.pdf',
+      live: 'https://public.bc.fi/s1900879/dohtuxa/tot/',
     },
   },
   {

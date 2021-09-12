@@ -8,17 +8,17 @@ const Projects = () => {
 
   return (
     <section id='projects' className='flex flex-col py-10 px-32'>
-      <section className='px-24'>
-        <h1 className='text-6xl font-semibold mr-auto mb-10'>Projects</h1>
-        <section className='grid grid-cols-2 place-content-center place-items-center mb-7'>
+      <section className='xl:px-24'>
+        <h1 className='text-6xl font-semibold  mb-10 xl:mr-auto'>Projects</h1>
+        <section className='grid grid-cols-1 place-content-center place-items-center mb-7 xl:grid-cols-2 '>
           {projects.map((project, i) => (
             <article
-              className='flex flex-col p-5 w-max bg-white rounded-xl mb-7'
+              className='flex flex-col p-5 bg-white rounded-xl mb-7 mx-5  xl:w-max'
               key={i}
             >
-              <figure className='mb-10 max-w-lg'>
+              <figure className='mb-10 max-w-md xl:max-w-lg'>
                 <img
-                  className='rounded-xl'
+                  className='rounded-xl block'
                   src={project.image}
                   alt={project.name}
                 />

@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
-import { AiFillGithub } from 'react-icons/ai';
 import Head from 'next/head';
+import { AiFillGithub } from 'react-icons/ai';
+import { CgMenuRight } from 'react-icons/cg';
 
 type Props = {
   children?: ReactNode;
@@ -14,27 +15,25 @@ export default function Layout({
 }: Props) {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
+          rel='stylesheet'
+        ></link>
+      </Head>
       <section className='bg-primary'>
-        <Head>
-          <title>{title}</title>
-          <meta charSet='utf-8' />
-          <meta
-            name='viewport'
-            content='initial-scale=1.0, width=device-width'
-          />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
-            rel='stylesheet'
-          ></link>
-        </Head>
-        <header className='fixed flex items-center justify-center w-full h-16 px-32 '>
-          <section className='flex items-center justify-between w-full px-24'>
+        <header className='fixed flex items-center justify-center w-full h-16 px:5 xl:px-32 xl:w-full'>
+          <section className='flex items-center justify-between w-full px-5 xl:px-24'>
             <section className=''>
               <Link href='#hero'>
                 <a className='text-2xl font-medium'>Marco Kammer</a>
               </Link>
             </section>
-            <nav className='w-1/3 flex items-center justify-evenly'>
+            <CgMenuRight className='text-4xl' />
+            <nav className='hidden xl:flex xl:w-1/3  xl:items-center xl:justify-evenly'>
               <Link href='#projects'>
                 <a className='text-2xl'>Projects</a>
               </Link>

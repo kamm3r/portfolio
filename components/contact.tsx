@@ -19,11 +19,11 @@ export default function Contact() {
   return (
     <section
       id='contact'
-      className='h-full flex items-center justify-center px-32'
+      className='h-full flex items-center justify-center px-5 xl:px-32 w-full'
     >
-      <section className='flex flex-col items-end justify-center px-24 my-1 p-20 bg-secondary relative'>
+      <section className='flex flex-col items-end justify-center px-16 py-16 xl:px-24 my-1 xl:py-20 bg-secondary relative w-full'>
         <button
-          className='absolute right-11 top-10 flex items-center'
+          className='absolute right-10 top-5 xl:right-11 xl:top-10 flex items-center'
           onClick={copy}
           disabled={!text}
         >
@@ -31,7 +31,7 @@ export default function Contact() {
           <MdContentCopy className='text-4xl' />
         </button>
         <section>
-          <p className='text-6xl'>{text}</p>
+          <p className='text-xl xl:text-6xl'>{text}</p>
         </section>
       </section>
     </section>
