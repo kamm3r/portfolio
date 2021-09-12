@@ -21,7 +21,7 @@ export default function Hero() {
       className='relative min-h-screen flex items-center justify-center overflow-x-hidden'
     >
       <div className='z-10 flex flex-col items-start justify-center mx-10 xl:mx-52'>
-        <h1 className='text-6xl xl:text-7xl font-bold mb-9'>
+        <h1 className='text-5xl xl:text-7xl font-bold mb-9'>
           Motivated to build and design amazing experiences
         </h1>
         <p className='text-xl xl:text-4xl text-gray mb-9'>

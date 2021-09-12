@@ -32,7 +32,7 @@ export default function Layout({
                 <a className='text-2xl font-medium'>Marco Kammer</a>
               </Link>
             </section>
-            <CgMenuRight className='text-4xl' />
+            <CgMenuRight className='text-4xl xl:hidden' />
             <nav className='hidden xl:flex xl:w-1/3  xl:items-center xl:justify-evenly'>
               <Link href='#projects'>
                 <a className='text-2xl'>Projects</a>

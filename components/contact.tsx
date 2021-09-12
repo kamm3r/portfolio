@@ -28,10 +28,10 @@ export default function Contact() {
           disabled={!text}
         >
           {isCopied && <p className='font-bold mr-5'>Copied!</p>}
-          <MdContentCopy className='text-4xl' />
+          <MdContentCopy className='text-2xl xl:text-4xl' />
         </button>
         <section>
-          <p className='text-xl xl:text-6xl'>{text}</p>
+          <p className='text-base text-black xl:text-6xl'>{text}</p>
         </section>
       </section>
     </section>
