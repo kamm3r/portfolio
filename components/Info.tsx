@@ -18,9 +18,9 @@ const Info = () => (
       <section className='bg-secondary px-10 xl:px-32'>
         <article className='xl:px-24'>
           <h4 className='text-2xl xl:text-5xl leading-snug py-10'>
-            Hi, My name is Marco Kammer, I am Hammer thrower who loves to code
-            and learn new skills. It would mean the world to me if you guys
-            check my project!
+            Hi, My name is Marco Kammer, I am Hammer thrower who loves to code,
+            design and learn new skills. It would mean the world to me if you
+            guys check my project!
           </h4>
         </article>
       </section>

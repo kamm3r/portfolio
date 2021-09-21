@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Canvas } from '@react-three/fiber';
-// import { OrbitControls } from '@react-three/drei';
 import Element from './splat';
 
 const Lights = () => {
@@ -35,7 +34,7 @@ export default function Hero() {
         </Link>
       </div>
       <div className='absolute z-0 block w-screen h-screen'>
-        <Canvas camera={{ position: [0, 90, 0], fov: 90 }}>
+        {/* <Canvas camera={{ position: [0, 90, 0], fov: 90 }}>
           <Lights />
           <Element position={[0, 0, 0]} />
           <Element position={[10, 5, 15]} />
@@ -43,8 +42,7 @@ export default function Hero() {
           <Element position={[-30, -20, -20]} />
           <Element position={[-15, 5, 5]} />
           <Element position={[-5, -50, -5]} />
-          {/* <OrbitControls enableZoom={false} /> */}
-        </Canvas>
+        </Canvas> */}
       </div>
     </section>
   );

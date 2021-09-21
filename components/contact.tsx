@@ -21,7 +21,7 @@ export default function Contact() {
       id='contact'
       className='h-full flex items-center justify-center px-5 xl:px-32 w-full'
     >
-      <section className='flex flex-col items-end justify-center px-16 py-16 xl:px-24 my-1 xl:py-20 bg-secondary relative w-full'>
+      <section className='flex flex-col items-center justify-center px-16 py-16 xl:px-24 my-1 xl:py-20 bg-secondary relative w-full'>
         <button
           className='absolute right-10 top-5 xl:right-11 xl:top-10 flex items-center'
           onClick={copy}

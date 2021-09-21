@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { AiFillGithub } from 'react-icons/ai';
 import { CgMediaLive } from 'react-icons/cg';
 import { projectData } from '../utils/project-data';
@@ -18,11 +19,15 @@ const Projects = () => {
               className='flex flex-col p-5 bg-white rounded-xl mb-7 mx-5  xl:w-max'
               key={i}
             >
-              <figure className='mb-10 max-w-md xl:max-w-lg'>
-                <img
-                  className='rounded-xl block'
+              <figure className='mb-10 max-w-md lg:max-w-lg'>
+                <Image
+                  className='rounded-xl block '
                   src={project.image}
                   alt={project.name}
+                  width={512}
+                  height={400}
+                  objectFit='cover'
+                  priority
                 />
               </figure>
               <section className='flex gap-5'>
